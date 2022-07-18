@@ -2,6 +2,7 @@ import cv2
 import streamlit as st
 import numpy as np
 from PIL import Image
+from io import BytesIO
 
 
 def cartoonify_image(image):
@@ -32,13 +33,14 @@ def main_loop():
 
     st.subheader("Original Image")
     st.image(original_image)
-
+    st.write("\n")
+    st.write("\n")
+    
     st.subheader("Artistic Image (Processed)")
     st.image(processed_image)
 
     result = Image.fromarray(processed_image)
 
-    from io import BytesIO
     buf = BytesIO()
     result.save(buf, format="JPEG")
     byte_im = buf.getvalue()
