@@ -30,10 +30,10 @@ def main_loop():
 
     processed_image = cartoonify_image(original_image)
 
-    st.text("Original Image")
+    st.subheader("Original Image")
     st.image(original_image)
 
-    st.text("Artistic Image (Processed)")
+    st.subheader("Artistic Image (Processed)")
     st.image(processed_image)
 
     result = Image.fromarray(processed_image)
