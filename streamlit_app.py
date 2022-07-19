@@ -41,9 +41,8 @@ def invert(img):
 
 
 def main_loop():
-    st.title("ARTISTIC FILTER")
-    st.subheader("This app gives an artistic touch to your images!")
-    st.text("We use OpenCV and Streamlit for this demo")
+    st.title("IMAGE FILTERS USING OPENCV")
+    st.subheader("App to apply filters to beautify your image.")
 
     image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     if not image_file:
