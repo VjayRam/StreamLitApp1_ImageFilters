@@ -1,4 +1,4 @@
 streamlit==1.11.0
 opencv-python==4.5.5.62
-Pillow==9.2.0
+pillow>=10.0.1
 altair==4.0
